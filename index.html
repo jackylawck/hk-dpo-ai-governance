@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Author & Credit Code-Level Annotation for SEO (羅子淇 Jacky Law) -->
+    <!-- Author: 羅子淇 Jacky Law | Personal Site: https://jackylawck.github.io/jackylawck/ -->
+    
+    <!-- Google Search Console 驗證標籤 -->
+    <meta name="google-site-verification" content="JZ5UohX-CcP_fQV0_DI9VadkKY4ZoTTkUifL88-fIcY" />
+    
+    <!-- 精準 SEO 設定 (Google 搜尋結果格式優化) -->
+    <title>HK DPO GenAI Governance Sandbox | 決定性合規風險評分卡</title>
+    <meta name="description" content="香港企業級 AI 合規管治與風險分流工作站 — 依據香港數字政策辦公室 (DPO) 2025《生成式人工智能技術及應用指引》V1.1 與 ISO 42001。具備 100% 決定性硬化防禦網閘、自動化四級風險分類與密碼学審計軌跡。Enterprise GenAI compliance pre-audit gatekeeper.">
+    <meta name="keywords" content="HK DPO V1.1, 香港數字政策辦公室, 生成式人工智能指引, ISO 42001, AI Governance, AI管治, 決定性預審, Compliance-as-Code, Zero Data Retention, 羅子淇, Jacky Law">
+    <meta name="author" content="Jacky Law 羅子淇 (https://jackylawck.github.io/jackylawck/)">
+    <link rel="author" href="https://jackylawck.github.io/jackylawck/" />
+    <link rel="me" href="https://jackylawck.github.io/jackylawck/" />
+
+    <!-- Open Graph 社群與多語言標籤 -->
+    <meta property="og:title" content="HK DPO GenAI Governance Sandbox | 決定性合規風險評分卡">
+    <meta property="og:description" content="香港企業級 AI 合規管治與風險分流工作站 — 具備 100% 決定性防禦網閘、自動化四級風險分類與 ISO 42001 密碼學審計軌跡。Enterprise AI Governance Sandbox.">
+    <meta property="og:url" content="https://jackylawck.github.io/hk-dpo-ai-governance/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh_HK">
+    <meta property="og:locale:alternate" content="en_US">
+    <link rel="canonical" href="https://hk-dpo-ai-governance.streamlit.app/" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            500: '#10b981',
+                            600: '#059669',
+                            900: '#0f172a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-emerald-600 selection:text-white">
+
+    <!-- 導覽列 Navigation -->
+    <nav class="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="font-bold text-lg tracking-tight text-white flex items-center gap-2">
+                <span>🏛️ HK DPO GenAI Sandbox</span>
+                <span class="text-xs text-emerald-400 font-normal border border-emerald-800/60 bg-emerald-950/40 px-2 py-0.5 rounded">v1.1 ISO-Ready</span>
+            </div>
+            <div class="flex items-center space-x-6 text-sm font-medium text-slate-400">
+                <a href="#features" class="hover:text-emerald-400 transition-colors">Features / 核心特色</a>
+                <a href="#security" class="hover:text-emerald-400 transition-colors">Governance / 資安管治</a>
+                <a href="https://github.com/jackylawck/hk-dpo-ai-governance" target="_blank" class="hover:text-white transition-colors">GitHub Repo</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero 區域 -->
+    <header class="py-20 px-6 max-w-6xl mx-auto text-center sm:text-left">
+        <div class="max-w-3xl">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 text-xs font-semibold mb-6">
+                <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                Enterprise AI Compliance & Governance Gatekeeper | 香港 GenAI 合規預審與風險門神
+            </div>
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight mb-6">
+                HK DPO GenAI Governance Sandbox<br>
+                <span class="text-emerald-400 text-3xl sm:text-4xl">決定性合規風險評分卡系統</span>
+            </h1>
+            
+            <div class="space-y-3 text-slate-300 leading-relaxed mb-8">
+                <p class="text-base sm:text-lg">
+                    企業級香港數字政策辦公室《生成式人工智能技術及應用指引》V1.1 預審工作站 — 採用 100% 決定性條件邏輯樹，徹底消除大語言模型 (LLM) 生成式幻覺，為企業高管及 HR 團隊提供即時自動化四級風險分類與合規預審評分。
+                </p>
+                <p class="text-sm sm:text-base text-slate-400 italic">
+                    Enterprise pre-audit risk classification workstation implementing HK DPO V1.1 Guideline and ISO 42001 standards. Features 100% deterministic engines, out-of-scope blocking, and executive audit scorecards.
+                </p>
+            </div>
+            
+            <!-- 行動按鈕 -->
+            <div class="flex flex-wrap gap-4 justify-center sm:justify-start">
+                <a href="https://hk-dpo-ai-governance.streamlit.app" target="_blank" rel="noopener" class="px-8 py-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold transition-all shadow-lg shadow-emerald-600/30 flex items-center gap-2">
+                    🚀 即刻體驗 Web App / Launch Sandbox
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+                <a href="https://github.com/jackylawck/hk-dpo-ai-governance" target="_blank" rel="noopener" class="px-6 py-4 rounded-xl border border-slate-700 hover:bg-slate-800 text-slate-300 font-medium transition-all">
+                    GitHub Source Code
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- GitHub Topics 標籤牆 -->
+    <section class="py-6 border-y border-slate-900 bg-slate-900/30">
+        <div class="max-w-6xl mx-auto px-6 flex flex-wrap items-center justify-center sm:justify-start gap-2">
+            <span class="text-xs text-slate-400 font-semibold mr-2">Topics & Compliance Frameworks:</span>
+            <span class="px-3 py-1 rounded-full text-xs font-mono bg-emerald-950/60 text-emerald-400 border border-emerald-800/50">ai-governance</span>
+            <span class="px-3 py-1 rounded-full text-xs font-mono bg-emerald-950/60 text-emerald-400 border border-emerald-800/50">iso-42001</span>
+            <span class="px-3 py-1 rounded-full text-xs font-mono bg-emerald-950/60 text-emerald-400 border border-emerald-800/50">privacy-by-design</span>
+            <span class="px-3 py-1 rounded-full text-xs font-mono bg-emerald-950/60 text-emerald-400 border border-emerald-800/50">zero-data-retention</span>
+            <span class="px-3 py-1 rounded-full text-xs font-mono bg-emerald-950/60 text-emerald-400 border border-emerald-800/50">deterministic-ai</span>
+            <span class="px-3 py-1 rounded-full text-xs font-mono bg-slate-800 text-slate-300 border border-slate-700">hk-dpo-v1.1</span>
+            <span class="px-3 py-1 rounded-full text-xs font-mono bg-slate-800 text-slate-300 border border-slate-700">compliance-as-code</span>
+        </div>
+    </section>
+
+    <!-- 核心特色 Section -->
+    <section id="features" class="py-16 px-6 max-w-6xl mx-auto">
+        <h2 class="text-xs uppercase tracking-widest text-slate-400 font-semibold mb-8">Key Capabilities / 核心特色</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="p-6 rounded-2xl border border-slate-800 bg-slate-900/40 space-y-3">
+                <div class="text-3xl">🧱</div>
+                <h3 class="text-lg font-bold text-white">100% 決定性預審硬化<br><span class="text-xs text-emerald-400 font-normal">Zero Generative Hallucination</span></h3>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    採用硬性條件邏輯，徹底排除大語言模型生成式的隨機性與幻覺，為數字辦 V1.1 四級風險分類提供確定的預審判定與失效安全機制。<br>
+                    <span class="text-xs text-slate-500 block mt-1">Eliminates probabilistic inference through rigid conditional engines, ensuring zero hallucination for compliance readiness.</span>
+                </p>
+            </div>
+            <div class="p-6 rounded-2xl border border-slate-800 bg-slate-900/40 space-y-3">
+                <div class="text-3xl">🚫</div>
+                <h3 class="text-lg font-bold text-white">超出範疇主動阻斷<br><span class="text-xs text-emerald-400 font-normal">Proactive Out-of-Scope Blocking</span></h3>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    系統限定評估生成式 AI 技術。若輸入傳統判別式或統計機器學習模型（如 Random Forest、XGBoost），將自動程式化攔截並發出警告。<br>
+                    <span class="text-xs text-slate-500 block mt-1">Programmatically rejects non-GenAI machine learning models to maintain evaluation boundary precision.</span>
+                </p>
+            </div>
+            <div class="p-6 rounded-2xl border border-slate-800 bg-slate-900/40 space-y-3">
+                <div class="text-3xl">🛡️</div>
+                <h3 class="text-lg font-bold text-white">企業高管審計評分卡<br><span class="text-xs text-emerald-400 font-normal">Executive Audit Scorecard</span></h3>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    多維度審查數據源頭與隱私、組織變更與培訓對齊、人工介入與終止機制（Human-in-the-Loop），產出董事會對齊報告。<br>
+                    <span class="text-xs text-slate-500 block mt-1">Evaluates data provenance, organizational change alignment, and human override verification for C-suite reporting.</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 資安與隱私合規 Section -->
+    <section id="security" class="py-16 px-6 max-w-6xl mx-auto border-t border-slate-900">
+        <div class="rounded-3xl border border-emerald-900/40 bg-gradient-to-b from-emerald-950/20 to-slate-900/40 p-8 sm:p-12">
+            <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                <span>🛡️</span> ISO 42001 & Privacy-by-Design 治理架構
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8 text-sm text-slate-300">
+                <div class="space-y-2">
+                    <h4 class="font-semibold text-emerald-400 text-base">🔒 零數據留存 (Zero Data Retention / ZDR)</h4>
+                    <p class="leading-relaxed text-slate-400">
+                        採用純 Session-Only 記憶體運算架構。用戶輸入之組織參數絕不儲存於任何硬碟或雲端資料庫，會話關閉即刻徹底銷毀。<br>
+                        <span class="text-xs text-slate-500 block mt-1">Session-only in-memory processing. Organizational variables are evaluated dynamically and destroyed instantly upon session closure.</span>
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <h4 class="font-semibold text-emerald-400 text-base">🔒 資料最小化與 PII 隔離 (Data Minimization)</h4>
+                    <p class="leading-relaxed text-slate-400">
+                        系統僅接收組織分類選項，設計上徹底隔離個人識別資訊 (PII)。符合 ISO 42001 與《個人資料(私隱)條例》之最高防護標準。<br>
+                        <span class="text-xs text-slate-500 block mt-1">Processes categorical parameters only, strictly isolating PII in alignment with international privacy standards.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code-level credit for SEO crawlers: Developed by Jacky Law 羅子淇 (https://jackylawck.github.io/jackylawck/) -->
+    <footer class="border-t border-slate-900 py-8 px-6 text-center text-xs text-slate-600">
+        <p>© 2026 HK DPO GenAI Governance Sandbox. Released under Creative Commons CC BY 4.0 / Open Source Governance Protocol.</p>
+        <p class="mt-2 text-[10px] text-slate-700">
+            <a href="https://jackylawck.github.io/jackylawck/" target="_blank" class="hover:underline">Jacky Law 羅子淇</a>
+        </p>
+    </footer>
+
+</body>
+</html>

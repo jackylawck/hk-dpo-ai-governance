@@ -44,7 +44,7 @@
 
 ## 5. Contact & Accountability (問責與聯絡人)
 
-* **System Owner / 系統負責人:** Jacky Law
+* **System Owner / 系統負責人:** Jacky Law 羅子淇
 * **LinkedIn / 專業人脈:** [https://www.linkedin.com/in/jackylawck](https://www.linkedin.com/in/jackylawck)
 
 ## 5. Contact & Accountability (問責與聯絡人)
